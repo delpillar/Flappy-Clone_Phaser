@@ -9,6 +9,6 @@ FlappyBird.Boot.prototype = {
 	},
 	
 	create: function() {
-
+		this.state.start('Preloader');
 	}
 }
