@@ -27,6 +27,5 @@ FlappyBird.Boot.prototype = {
 		this.stage.backgroundColor = '#171642';
 		
 		this.state.start('Preloader');
-
 	}
 }

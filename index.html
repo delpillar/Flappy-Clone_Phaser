@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Flappy-Clone_Phaser</title>
+	<script src="libs/phaser.js"></script>
+	<script src="Preloader.js"></script>
+	<script src="Boot.js"></script>
+</head>
+<body>
+	<div id="gameContainer"></div>
+	<script type="text/javascript">
+	window.onload = function() {
+		//Width and Height is temporary
+		var game = new Phaser.Game(800, 800, Phaser.AUTO, 'gameContainer');
+		game.state.add('Boot', FlappyBird.Boot);
+		game.state.add('Preloader', FlappyBird.Preloader);
+	}
+	</script>
+</body>
+</html>
